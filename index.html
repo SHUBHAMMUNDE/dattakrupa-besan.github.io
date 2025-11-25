@@ -1,56 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dattakrupa Besan & Dal Mill – Talegaon, Parli Vaijnath</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dattakrupa Besan & Dal Mill – Talegaon, Parli Vaijnath</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f6f3e9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Header + Nav */
+
+    header {
+      background: #f0c94c;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 13px;
+      opacity: 0.85;
+    }
+
+    nav {
+      background: #2b3338;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      padding: 8px 0;
+    }
+
+    .nav-inner a {
+      color: #f6f6f6;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .nav-inner a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+
+    section {
+      margin: 24px 0;
+      padding: 18px 20px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+
+    section h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    section p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Hero */
+
+    #home {
+      text-align: center;
+    }
+
+    #home h2 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    #home img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 12px;
+      margin: 14px auto;
+      display: block;
+      border: 1px solid #f0e0b2;
+      background: #fffdf5;
+    }
+
+    .btn-call {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #27ae60, #1f874a);
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* Lists */
+
+    ul {
+      margin-top: 6px;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    /* Footer */
+
+    footer {
+      margin-top: 28px;
+      padding: 16px 0;
+      text-align: center;
+      font-size: 13px;
+      color: #eee;
+      background: #26292b;
+    }
+
+    @media (max-width: 768px) {
+      .nav-inner {
+        flex-wrap: wrap;
+      }
+      section {
+        padding: 16px 14px;
+        margin: 18px 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header class="top-bar">
+  <!-- TOP BAR -->
+  <header>
     <h1>Dattakrupa Besan & Dal Mill</h1>
     <p>Talegaon · Parli Vaijnath · Beed Road</p>
-</header>
+  </header>
 
-<div class="container">
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <!-- ⭐ HERO SECTION WITH IMAGE -->
-    <section class="hero">
-        <h2>Premium Quality Besan & Dal</h2>
-        <p>Freshly milled. Clean. Pure. Trusted by homes & shops.</p>
+  <main class="container">
+    <!-- HOME / HERO -->
+    <section id="home">
+      <h2>Premium Quality Besan & Dal</h2>
+      <p>Freshly milled, clean and pure. Trusted by homes and shops in Talegaon, Parli Vaijnath and nearby areas.</p>
 
-        <!-- Your Besan Image -->
-        <img src="besan.png" alt="Besan Image"
-             style="width:100%; max-width:400px; border-radius:10px; margin:15px auto; display:block;">
+      <!-- YOUR IMAGE -->
+      <img src="besan.png" alt="Besan product image" />
+
+      <a class="btn-call" href="tel:8788487055">📞 Call 8788487055</a>
     </section>
 
+    <!-- PRODUCTS -->
     <section id="products">
-        <h2>Our Products</h2>
-        <ul>
-            <li>Fine Chana Besan – 1kg, 5kg, 25kg</li>
-            <li>Fresh Dal Grinding</li>
-            <li>Wholesale Supply for Shops & Hotels</li>
-        </ul>
+      <h2>Our Products</h2>
+      <p>We provide fresh besan and dal suitable for daily use and wholesale supply.</p>
+      <ul>
+        <li>Fine Chana Besan – 1 kg, 5 kg, 25 kg bags</li>
+        <li>Fresh Dal Grinding – clean and properly milled</li>
+        <li>Bulk / Wholesale supply for shops & hotels</li>
+      </ul>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
-        <h2>About Us</h2>
-        <p>Dattakrupa Besan & Dal Mill is located in Talegaon, Parli Vaijnath, Beed Road.  
-        We mill fresh, clean besan and dal for local families and businesses.</p>
+      <h2>About Dattakrupa Mill</h2>
+      <p>
+        Dattakrupa Besan & Dal Mill is located at Talegaon, Parli Vaijnath (Beed Road), Maharashtra.
+        We focus on clean grains, proper storage and fresh grinding so that your besan and dal taste good every time.
+      </p>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Phone:</strong> <a href="tel:8788487055">8788487055</a></p>
-        <p><strong>Address:</strong> Talegaon, Parli Vaijnath, Beed Road, Maharashtra</p>
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> <a href="tel:8788487055">8788487055</a></p>
+      <p><strong>Address:</strong> Talegaon, Parli Vaijnath, Beed Road, Maharashtra</p>
     </section>
+  </main>
 
-</div>
-
-<footer class="footer">
-    <p>© 2025 Dattakrupa Besan & Dal Mill</p>
-</footer>
+  <footer>
+    © 2025 Dattakrupa Besan & Dal Mill
+  </footer>
 
 </body>
 </html>
